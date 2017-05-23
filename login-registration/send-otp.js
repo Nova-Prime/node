@@ -5,6 +5,10 @@ const _url = '';
 
 
 var validate = (local_msisdn) => {
+    if (/^[^0]([0-9]{9})$/.test(local_msisdn)) {
+        return true;
+    }
+    return false;
 };
 
 var generateOtp = () => {
@@ -33,5 +37,5 @@ var sendOtp = (msisdn) => {
 
 
 module.exports = {
-    sendOtp
+    sendOtp, validate
 };
