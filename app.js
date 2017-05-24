@@ -4,5 +4,5 @@ const express =  require('express');
 
 const test = require('./login-registration/send-otp.js');
 
-console.log("Hello world !")
+console.log("Hello world ")
 console.log(test.validate('123456789kfksdf'));
