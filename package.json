@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.1",
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "lodash": "^4.17.4",
-    "socket.io": "^2.0.1"
+    "socket.io": "^2.0.1",
+    "validator": "^7.0.0"
   }
 }

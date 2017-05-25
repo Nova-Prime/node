@@ -1,8 +1,26 @@
 const _ = require('lodash');
-const express =  require('express');
+const express = require('express');
+const bodyparser = require('body-parser');
 
 
-const test = require('./login-registration/send-otp.js');
+var app = express();
+var PortNum = process.env.port || 3000;
+
+app.use(bodyparser.json());
+
+app.get('/test', (req, res) => {
+    console.log(req.query);
+    res.send('Welcome');
+});
 
 
-console.log(test.validate('123456789kfksdf'));
+
+
+
+
+
+
+app.listen(PortNum, () => {
+    console.log(`Server Started On Port ${PortNum}`)
+});
+
