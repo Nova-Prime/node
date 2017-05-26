@@ -17,7 +17,9 @@ app.get('/test', (req, res) => {
 
 
 
-
+app.get('/',function(req,res){
+    res.send(`<h1>Something Found Here </h1>`);
+});
 
 
 app.listen(PortNum, () => {
