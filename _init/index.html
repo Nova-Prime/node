@@ -5,6 +5,7 @@
     <title>Quadrent</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <base href="/">
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/root.css">
@@ -12,16 +13,19 @@
 
     <script src="./scripts/angular.min.js"></script>
     <script src="./scripts/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>
+
     <script src="./scripts/jquery.min.js"></script>
     <script src="./scripts/tether.min.js"></script>
     <script src="./scripts/bootstrap.min.js"></script>
 
     <script src="./root/app.js"></script>
     <script src="./root/core/home/_home.js"></script>
+    <script src="./root/core/login/_login.js"></script>
 </head>
 
 <body ng-app="root">
-    <ui-view></ui-view>
+        <ui-view></ui-view>
 </body>
 
 </html>
