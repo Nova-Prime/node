@@ -1,0 +1,27 @@
+#loginId {
+    background: #345;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-control {
+    border-radius: 0px;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.form-control:focus {
+    border-color: transparent;
+    border-bottom-color: #345;
+}
+
+#loginForm {
+    max-width: 500px;
+    background: white;
+    padding: 1em;
+}
